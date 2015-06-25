@@ -20,7 +20,7 @@ import android.content.Intent;
 public class MainActivity extends Activity implements OnItemClickListener {
 
 	private ListView lvContent;
-	private String[] data = {"即时音效"};
+	private String[] data = {"即时音效", "背景音乐"};
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,10 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		switch (position) {
 		case 0:
 			intent = new Intent(this, RealTimeAudioActivity.class);
+			startActivity(intent);
+			break;
+		case 1:
+			intent = new Intent(this, BackgroundMusicActivity.class);
 			startActivity(intent);
 			break;
 
