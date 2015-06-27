@@ -58,7 +58,7 @@ public class My2DSurfaceView extends SurfaceView implements SurfaceHolder.Callba
 				BitmapFactory.decodeResource(getResources(), R.drawable.explode5)
 		};
 		
-		bullet = new Bullet(this, bulletBitmap, explodeBitmap, 0, 290, 1.3f, -5.9f); //创建炮弹
+		bullet = new Bullet(this, bulletBitmap, explodeBitmap, 0, 350, 1.3f, -5.9f); //创建炮弹
 		
 		drawThread = new DrawThread(this);
 		drawThread.start();

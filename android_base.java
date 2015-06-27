@@ -101,3 +101,34 @@ byte[] buf = baos.toByteArray(); //转化为字节数组
 baos.close();
 is.close();
 String nr = new String(buf, "utf-8");
+
+
+
+
+网络 Socket
+String serverIp = "192.168.1.109";
+Socket socket = new Socket(serverIp, 8877);
+DataInputStream din = new DataInputStream(socket.getInputStream());
+DataOutputStream dout = new DataOutputStream(socket.getOutputStream());
+String s = din.readUTF();
+dout.writeUTF("isme");
+din.close();
+dout.close();
+socket.close();
+
+
+
+
+bluetooth
+蓝牙技术免费
+
+开启蓝牙，设置可见
+开启搜索功能
+设备列表，选择一项，请求匹配
+双方同意，匹配成功，收发数据
+
+
+
+
+
+
