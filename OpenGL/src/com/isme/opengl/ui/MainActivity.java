@@ -20,7 +20,7 @@ import android.content.Intent;
 public class MainActivity extends Activity implements OnItemClickListener {
 
 	private ListView lvContent;
-	private String[] data = {"即时音效", "背景音乐", "2D SurfaceView Game"};
+	private String[] data = {"即时音效", "背景音乐", "2D SurfaceView Game", "通过蓝牙发送消息"};
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +55,10 @@ public class MainActivity extends Activity implements OnItemClickListener {
 			break;
 		case 2:
 			intent = new Intent(this, SurfaceView2DActivity.class);
+			startActivity(intent);
+			break;
+		case 3:
+			intent = new Intent(this, BluetoothSendMsgActivity.class);
 			startActivity(intent);
 			break;
 

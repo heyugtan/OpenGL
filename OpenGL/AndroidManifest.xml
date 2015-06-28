@@ -29,6 +29,7 @@
         <activity android:name="com.isme.opengl.ui.RealTimeAudioActivity"></activity>
         <activity android:name="com.isme.opengl.ui.BackgroundMusicActivity"></activity>
         <activity android:name="com.isme.opengl.ui.SurfaceView2DActivity"></activity>
+        <activity android:name="com.isme.opengl.ui.BluetoothSendMsgActivity"></activity>
         
     </application>
 
